@@ -135,7 +135,8 @@ model = xgb.train(
         train_xgb,
 #       evals = [(train_xgb, "train"), (val_xgb, "valid")],
 #       early_stopping_rounds = 500,
-        num_boost_round = 400)
+        num_boost_round = 400
+)
 
 ##############
 # Evaluation #
