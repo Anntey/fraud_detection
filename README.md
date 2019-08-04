@@ -9,3 +9,5 @@ Evaluation: area under the ROC curve
 Solution: XGBoost
 
 Success: 0.937 AUC
+
+![alt text](shap_summary.png)
