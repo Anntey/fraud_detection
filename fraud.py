@@ -193,10 +193,7 @@ plt.ylabel("Precision")
 # Prediction #
 ##############
 
-preds = model.predict(
-        test_xgb,
-#       ntree_limit = model.best_ntree_limit
-)
+preds = model.predict(test_xgb)
 
 subm_df["isFraud"] = preds
 
