@@ -6,7 +6,7 @@ Task: predict the probability that an online transaction is fraudulent
 
 Evaluation: area under the ROC curve
 
-Solution: XGBoost
+Solution: XGBoost classifier
 
 Success: 0.937 AUC
 
