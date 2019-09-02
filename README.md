@@ -1,6 +1,6 @@
 # Kaggle: Fraud Detection ([link](https://www.kaggle.com/c/ieee-fraud-detection/overview))
 
-Data: 591 000 online payment transactions and 144 000 identities
+Data: 591 000 online payment transactions and 144 000 associated identities
 
 Task: predict the probability that an online transaction is fraudulent
 
