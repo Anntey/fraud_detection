@@ -188,7 +188,6 @@ plt.title("Precision-Recall curve (avg precision = {0:0.3f})".format(average_pre
 plt.xlabel("Recall")
 plt.ylabel("Precision")
 
-
 ##############
 # Prediction #
 ##############
