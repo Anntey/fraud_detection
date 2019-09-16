@@ -142,16 +142,16 @@ model = xgb.train(
 # Evaluation #
 ##############
 
-# SHAP values
+# ----------- SHAP values -----------
 shap_explainer = shap.TreeExplainer(model)
 shap_values = shap_explainer.shap_values(x_train[:50000]) # data set too large as a whole
 shap.summary_plot(shap_values, x_train[:50000]) # feature importance summary
 
-# validation set prediction
+# ----------- Validation set prediction -----------
 y_pred = model.predict(val_xgb)
 y_true = y_val
 
-# Confusion matrix
+# ----------- Confusion matrix -----------
 cm = confusion_matrix(y_true, y_pred > 0.5)
 
 plt.figure(figsize = (5, 4))
@@ -160,7 +160,7 @@ plt.title("Confusion matrix")
 plt.ylabel("True label")
 plt.xlabel("Predicted label")
 
-# ROC curve
+# ----------- ROC curve ----------- 
 f_pos_rate, t_pos_rate, thresholds = roc_curve(y_true, y_pred)
 auc = roc_auc_score(y_true, y_pred)
 
@@ -175,7 +175,7 @@ plt.ylabel("True Positive Rate")
 plt.legend(loc = "lower right")
 plt.show()
 
-# Precision-Recall curve
+# ----------- Precision-Recall curve ----------- 
 precision, recall, thresholds = precision_recall_curve(y_true, y_pred)
 average_precision = average_precision_score(y_true, y_pred)
 
