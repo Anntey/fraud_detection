@@ -1,4 +1,4 @@
-# Kaggle: Fraud Detection ([link](https://www.kaggle.com/c/ieee-fraud-detection/overview))
+# Kaggle: IEEE-CIS Fraud Detection ([link](https://www.kaggle.com/c/ieee-fraud-detection/overview))
 
 Data: 591 000 online payment transactions and 144 000 associated identities
 
