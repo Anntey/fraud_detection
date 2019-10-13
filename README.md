@@ -2,7 +2,7 @@
 
 __Data__: 591 000 online payment transactions and 144 000 associated identities
 
-__Task__: predict the probability that an online transaction is fraudulent
+__Task__: predict the probability that an identity has fraudulent transactions
 
 __Evaluation__: area under the ROC curve
 
